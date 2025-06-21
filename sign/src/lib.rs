@@ -4,7 +4,7 @@ use hyperware_process_lib::logging::{init_logging, Level};
 use hyperware_process_lib::net::{NetAction, NetResponse};
 use hyperware_process_lib::{last_blob, our, LazyLoadBlob, Request};
 
-use hyperware_app_common::send_rmp;
+use hyperware_app_common::{send_rmp, source};
 use hyperprocess_macro::hyperprocess;
 
 #[derive(Default, Debug, serde::Serialize, serde::Deserialize)]
